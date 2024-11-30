@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Sven Lauber, PS-IRS-APA, Federal Office of Information Technology ",
+  "classifications": ["Swiss", "WebAPI", "Blazor", "UI"],
+  "identity": "SwissConfederation.BlazorServerTemplate",
+  "name": "Swiss Confederation Blazor Server Template",
+  "shortName": "swissblazorserver",
+  "sourceName": "swiss-blazor-server-template",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sources": [
+    {
+      "exclude": [
+        "obj/**",
+        "bin/**",
+        ".template.config/**",
+        "*.sln"
+      ]
+    }
+  ]
+}
