@@ -15,24 +15,24 @@ cd swiss-dotnet-template/src/
 ### 2. Scaffold a Blazor Server Project
 Use the built-in blazor template to scaffold a Blazor Server project:
 ```bash
-dotnet new blazor -o blazor-server-template
+dotnet new blazor -o swiss-blazor-server-template
 ```
 
 ### 3. Clean Unnecessary Files
 Remove the obj directory as it is not needed in the template:
 ```bash
-rm -r blazor-server-template/obj
+rm -r swiss-blazor-server-template/obj
 ```
 
 ### 4. Add Template Configuration
 Create a .template.config folder in the root of the new project:
 ```bash
-mkdir blazor-server-template/.template.config
+mkdir swiss-blazor-server-template/.template.config
 ```
 
 Create the template.json file:
 ```bash
-touch blazor-server-template/.template.config/template.json
+touch swiss-blazor-server-template/.template.config/template.json
 ```
 
 ### 5. Configure template.json
@@ -66,8 +66,8 @@ Add the following content to the template.json file:
 6. Create a Solution File
 Run the following command to create a new solution file:
 ```bash
-cd blazor-server-template/
-dotnet new sln -n blazor-server-template
+cd swiss-blazor-server-template/
+dotnet new sln -n swiss-blazor-server-template
 ```
 
 This creates a solution file named swiss-dotnet-template.sln in the current directory.
@@ -75,31 +75,31 @@ This creates a solution file named swiss-dotnet-template.sln in the current dire
 7. Add the Project to the Solution
 Add your project to the solution file:
 ```bash
-dotnet sln add blazor-server-template.csproj
+dotnet sln add swiss-blazor-server-template.csproj
 ```
 
-This ensures that the blazor-server-template.csproj is recognized by the solution.
+This ensures that the swiss-blazor-server-template.csproj is recognized by the solution.
 
 ## Testing and Using the Template
 ### 1. Install the Template Locally
 Run the following command to install the template locally:
 ```bash
-dotnet new install ./blazor-server-template
+dotnet new install ./swiss-blazor-server-template
 ```
 
 ### 2. Create a New Project from the Template
 Generate a new project using the installed template:
 ```bash
-dotnet new swissdotnet -n MyCustomProject -o MyCustomProject
+dotnet new swissblazorserver -n MyCustomProject -o MyCustomProject
 ```
 
 ## Packaging the Template as a NuGet Package
 To share the template, you can package it as a NuGet package:
 
-Ensure your blazor-server-template project is ready for distribution.
+Ensure your swiss-blazor-server-template project is ready for distribution.
 Run the following command to create a NuGet package:
 ```bash
-dotnet pack ./blazor-server-template
+dotnet pack ./swiss-blazor-server-template
 ```
 
 This will create a .nupkg file in the bin/Debug folder. You can distribute this package or publish it to a NuGet feed for others to use.
