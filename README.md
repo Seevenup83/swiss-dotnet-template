@@ -30,30 +30,39 @@ The repository is organized as follows:
 ```
 ├── README.md                               # High-level overview of the project and instructions
 ├── docs/                                   # Documentation folder
+│   ├── how_to_template.md                  # Instructions on creating and maintaining the template
+│   ├── stakeholder-input.md                # Notes from discussions with stakeholders
+│   ├── usage.md                            # How to use the template
+│   ├── swiss-confederation-mudblazor.md    # Details on integrating Swiss Confederation design system
+│   ├── requirements.md                     # Requirements for the project
 ├── src/                                    # Template source code
-│   ├── template/                           # Base template files
+│   ├── swiss-blazor-server-template/       # Main template folder
 │   │   ├── .template.config/               # Template metadata
-│   |   |   └── template.json               # Metadata and settings for the .NET template
-|   |   ├── Components
-|   |   │   ├── Layout                      # Main layout
-|   |   │   ├── Pages
-|   |   |   │   ├── Examples                # Example Razor pages
-|   |   ├── Extensions/
-|   |   │   ├── HealthCheckExtensions.cs    # Contains health check registration logic
-|   |   │   ├── SwaggerExtensions.cs        # Contains swagger registration logic
+│   │   │   └── template.json               # Metadata and settings for the .NET template
+│   │   ├── Components/                     # Blazor components
+│   │   │   ├── Layout/                     # Layout components (MainLayout, Header, Footer, etc.)
+│   │   │   ├── Pages/                      # Application pages
+│   │   │   │   ├── Examples/               # Example Razor pages (Weather, Counter, etc.)
+│   │   ├── Extensions/                     # Extensions for reusable functionality
+│   │   │   ├── HealthCheckExtensions.cs    # Health check logic for OpenShift readiness/liveness probes
+│   │   │   ├── SwaggerExtensions.cs        # Swagger/OpenAPI documentation setup
+│   │   ├── Controllers/                    # Example API controllers
+│   │   │   ├── TodoController.cs           # Example controller for testing API functionality
 │   │   ├── Services/                       # Example service classes
-│   │   ├── Models/                         # Example models
+│   │   ├── Models/                         # Example models used by the application
 │   │   ├── wwwroot/                        # Static assets
-│   │   │   ├── bootstrap/                  # Bootstrap styles
-│   │   │   ├── swiss-confederation/        # Swiss Confederation styles and scripts
-│   │   │   │   ├── v1.0.26.css             # Main CSS for Swiss Confederation
-│   │   │   │   ├── scripts/                # JavaScript files
+│   │   │   ├── swiss-confederation/        # Swiss Confederation styles and resources
+│   │   │   │   ├── v1.0.26.css             # Swiss Confederation main CSS
+│   │   │   │   ├── scripts/                # JavaScript functionality
 │   │   │   │   ├── fonts/                  # Fonts used in the project
-│   │   │   │   ├── icons/                  # SVG icons for Swiss Confederation
-│   │   ├── Program.cs                      # Entry point
+│   │   │   │   ├── icons/                  # SVG icons for visual consistency
+│   │   │   │   ├── favicon.ico             # Project favicon
+│   │   ├── Program.cs                      # Application entry point
+│   │   ├── appsettings.json                # Default application settings
+│   │   ├── appsettings.Development.json    # Development-specific settings
 ├── tests/                                  # Template testing folder
-│   └── TemplateTest.csproj                 # Unit tests for template verification
-├── .gitignore                              # Git ignore file
+│   └── TemplateTest.csproj                 # Unit tests for verifying the template functionality
+├── .gitignore                              # Files and directories to be ignored by Git
 ```
 
 ## Getting Started
