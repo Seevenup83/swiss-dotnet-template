@@ -6,6 +6,11 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>blazor-server-template</RootNamespace>
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="7.1.0" />
+  </ItemGroup>
 
 </Project>
