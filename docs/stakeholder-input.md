@@ -42,3 +42,15 @@ Define a clear strategy for enabling developers to extend or customize the templ
 
 ### 7. Main Layout Design
 Discuss and finalize the structure and content of the main layout.
+
+## Ideas for the Future
+## 1. StatisticCollector API Integration
+## Purpose
+Collect and report usage metrics for all services automatically.
+
+## Implementation Idea
+- Include a default StatisticCollector service in the template.
+- This service can be invoked whenever a new API call is made, logging the service's name and incrementing its usage counter.
+## Benefits:
+- Provides insight into service usage patterns.
+- Identifies underutilized or heavily used APIs for optimization efforts.
