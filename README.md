@@ -36,7 +36,7 @@ The repository is organized as follows:
 │   ├── swiss-confederation-mudblazor.md    # Details on integrating Swiss Confederation design system
 │   ├── requirements.md                     # Requirements for the project
 ├── src/                                    # Template source code
-│   ├── swiss-blazor-server-template/       # Main template folder
+│   ├── blazor_server_template/             # Main template folder
 │   │   ├── .template.config/               # Template metadata
 │   │   │   └── template.json               # Metadata and settings for the .NET template
 │   │   ├── Components/                     # Blazor components
@@ -48,8 +48,8 @@ The repository is organized as follows:
 │   │   │   ├── SwaggerExtensions.cs        # Swagger/OpenAPI documentation setup
 │   │   ├── Controllers/                    # Example API controllers
 │   │   │   ├── TodoController.cs           # Example controller for testing API functionality
-│   │   ├── Services/                       # Example service classes
-│   │   ├── Models/                         # Example models used by the application
+|   |   ├── tests/                          # Template testing folder
+│   |   |   └── TemplateTest.csproj         # Unit tests for verifying the template functionality
 │   │   ├── wwwroot/                        # Static assets
 │   │   │   ├── swiss-confederation/        # Swiss Confederation styles and resources
 │   │   │   │   ├── v1.0.26.css             # Swiss Confederation main CSS
@@ -60,8 +60,6 @@ The repository is organized as follows:
 │   │   ├── Program.cs                      # Application entry point
 │   │   ├── appsettings.json                # Default application settings
 │   │   ├── appsettings.Development.json    # Development-specific settings
-├── tests/                                  # Template testing folder
-│   └── TemplateTest.csproj                 # Unit tests for verifying the template functionality
 ├── .gitignore                              # Files and directories to be ignored by Git
 ```
 
