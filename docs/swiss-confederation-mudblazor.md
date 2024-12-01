@@ -41,6 +41,22 @@ The full file structure for the fonts:
 ./wwwroot/swiss-confederation/fonts/NotoSans-Bold.ttf
 ```
 
+## 3. Favicon Integration
+### Source
+The favicon.ico was obtained from the Design System repository.
+
+### Storage Location
+The favicon.ico file was stored in the following directory:
+
+```bash
+./wwwroot/swiss-confederation/favicon.ico
+```
+### Implementation
+The favicon was included in the ```App.razor``` file as follows:
+
+```html
+<link rel="icon" href="swiss-confederation/favicon.ico" />
+```
 ## 4. Blazor Integration
 ### Stylesheet Inclusion
 The Swiss Confederation CSS file was included in the ```App.razor``` file as follows:
