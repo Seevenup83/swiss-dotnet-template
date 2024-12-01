@@ -61,7 +61,7 @@ The repository is organized as follows:
 Follow these steps to install and use the Swiss .NET Project Template.
 
 ### Prerequisites
-- .NET SDK 8.0 or later
+- .NET SDK 8.0 or later ([Install .NET SDK on Ubuntu](https://learn.microsoft.com/en-us/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2410))
 - Git for version control
 
 ### Installation
