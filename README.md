@@ -28,25 +28,27 @@ The template reduces setup time, promotes best practices, and aligns with organi
 ## Folder Structure
 The repository is organized as follows:
 ```
-├── README.md                    # High-level overview of the project and instructions
-├── LICENSE                      # Licensing information (if applicable)
-├── docs/                        # Documentation folder
-│   ├── requirements.md          # Project requirements documentation
-│   ├── stakeholder-input.md     # Stakeholder feedback and specific requirements
-│   └── usage.md                 # Instructions for installing and using the template
-├── src/                         # Template source code
-│   ├── template/                # Base template files
-│   │   ├── Pages/               # Example Razor pages (if Blazor)
-│   │   ├── Services/            # Example service classes
-│   │   ├── Models/              # Example models
-│   │   ├── wwwroot/             # Static assets (CSS, JS, fonts)
-│   │   │   ├── css/             # Includes Oblique CSS
-│   │   │   ├── fonts/           # Swiss Confederation fonts
-│   │   ├── Program.cs           # Entry point
-│   │   └── template.json        # Metadata for dotnet template
-├── tests/                       # Template testing folder
-│   └── TemplateTest.csproj      # Unit tests for template verification
-├── .gitignore                   # Git ignore file
+├── README.md                           # High-level overview of the project and instructions
+├── docs/                               # Documentation folder
+├── src/                                # Template source code
+│   ├── template/                       # Base template files
+│   │   ├── .template.config/           # Template metadata
+│   |   |   └── template.json           # Metadata and settings for the .NET template
+│   │   ├── Pages/                      # Example Razor pages
+│   │   ├── Services/                   # Example service classes
+│   │   ├── Models/                     # Example models
+│   │   ├── wwwroot/                    # Static assets
+│   │   │   ├── bootstrap/              # Bootstrap styles
+│   │   │   ├── swiss-confederation/    # Swiss Confederation styles and scripts
+│   │   │   │   ├── v1.0.26.css         # Main CSS for Swiss Confederation
+│   │   │   │   ├── scripts/            # JavaScript files
+│   │   │   │   ├── fonts/              # Fonts used in the project
+│   │   │   │   ├── icons/              # SVG icons for Swiss Confederation
+│   │   ├── Program.cs                  # Entry point
+│   │   └── template.json               # Metadata for dotnet template
+├── tests/                              # Template testing folder
+│   └── TemplateTest.csproj             # Unit tests for template verification
+├── .gitignore                          # Git ignore file
 ```
 
 ## Getting Started
