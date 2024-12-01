@@ -35,10 +35,12 @@ The repository is organized as follows:
 │   │   ├── .template.config/               # Template metadata
 │   |   |   └── template.json               # Metadata and settings for the .NET template
 |   |   ├── Components
-|   |   │   ├── Layout 
-|   |   │   ├── Pages                       # Example Razor pages
+|   |   │   ├── Layout                      # Main layout
+|   |   │   ├── Pages
+|   |   |   │   ├── Examples                # Example Razor pages
 |   |   ├── Extensions/
 |   |   │   ├── HealthCheckExtensions.cs    # Contains health check registration logic
+|   |   │   ├── SwaggerExtensions.cs        # Contains swagger registration logic
 │   │   ├── Services/                       # Example service classes
 │   │   ├── Models/                         # Example models
 │   │   ├── wwwroot/                        # Static assets
@@ -71,13 +73,13 @@ cd swiss-dotnet-template
 
 2. Install the template locally
 ```bash
-dotnet new --install ./src/template
+dotnet new --install ./src/swiss-blazor-server-template
 ```
 
 ## Usage
 Generate a new project using the template:
 ```bash
-dotnet new swiss-dotnet -n MyProjectName
+dotnet new swissblazorserver -n MyProjectName
 ```
 
 ## Contributing
