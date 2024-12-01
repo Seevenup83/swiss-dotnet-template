@@ -40,12 +40,12 @@ Add the following content to the template.json file:
 ```json
 {
   "$schema": "http://json.schemastore.org/template",
-  "author": "Sven Lauber, BIT, PS-IRS-APA",
+  "author": "Sven Lauber, PS-IRS-APA, Federal Office of Information Technology ",
   "classifications": ["Swiss", "WebAPI", "Blazor", "UI"],
-  "identity": "SwissDotNetTemplate.Template",
-  "name": "Swiss DotNet Template",
-  "shortName": "swissdotnet",
-  "sourceName": "swiss-dotnet-template",
+  "identity": "SwissConfederation.BlazorServerTemplate",
+  "name": "Swiss Confederation Blazor Server Template",
+  "shortName": "swissblazorserver",
+  "sourceName": "swiss-blazor-server-template",
   "tags": {
     "language": "C#",
     "type": "project"
@@ -53,7 +53,10 @@ Add the following content to the template.json file:
   "sources": [
     {
       "exclude": [
-        "**/*.sln"
+        "obj/**",
+        "bin/**",
+        ".template.config/**",
+        "*.sln"
       ]
     }
   ]

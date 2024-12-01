@@ -1,23 +1,26 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
-
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
-            @Body
-        </article>
+<body>
+    <header id="main-header">
+        <a href="#main-content" class="skip-to-content">Skip to main content</a>
+        <TopBar />
+        <TopHeader />
+        <DesktopMenu />
+        <MobileMenu />
+        <Breadcrumb />
+    </header>
+    <main id="main-content">
+        <section class="container">
+            @Body <!-- This will render the content of the page inside this section -->
+        </section>
+        <section>
+            <!-- Additional full-width content can be added here if needed -->
+            <!-- Optional additional parameter to inject full-width content -->
+        </section>
     </main>
-</div>
-
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
+    <footer id="main-footer">
+        <div class="container">
+            <Footer /> <!-- Footer component -->
+        </div>
+    </footer>
+</body>

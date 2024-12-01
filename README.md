@@ -9,6 +9,7 @@ A .NET project template designed to enforce consistent project structures, integ
 4. [Getting Started](#getting-started)
 5. [Contributing](#contributing)
 6. [Documentation](#documentation)
+7. [Designe Integration](#swiss-confederation-design-system-integration)
 
 
 ## About the Project
@@ -85,4 +86,11 @@ Contributions are welcome! To contribute:
 Please ensure your changes align with the project standards and include documentation if necessary.
 
 ## Documentation
-For a detailed guide on how to create a .NET template, refer to the [how_to_template.md](docs/how_to_template.md).
+For a detailed guide on how to create a .NET template, refer to the [Template Creation Guide](docs/how_to_template.md).
+
+
+## Swiss Confederation Design System Integration
+This project integrates the Swiss Confederation Design System to ensure compliance with federal design standards. The integration includes custom CSS and fonts, which are seamlessly incorporated into the Blazor template.
+
+
+For detailed steps and explanations about how the design system was integrated into this template, refer to the [Design System Integration Guide](docs/swiss-confederation-mudblazor.md).
